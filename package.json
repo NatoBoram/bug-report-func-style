@@ -1,20 +1,15 @@
 {
-	"name": "@natoboram/gigachad.ts",
+	"name": "@natoboram/bug-report-func-style",
 	"version": "0.0.0",
-	"description": "The most gigachad project setup for TypeScript.",
+	"description": "A bug report for ESLint's func-style rule",
 	"keywords": [
-		"dependabot",
+		"bug-report",
 		"eslint",
-		"gigachad",
-		"markdownlint",
-		"prettier",
-		"project-template",
-		"typescript",
-		"vitest"
+		"func-style"
 	],
-	"homepage": "https://github.com/NatoBoram/gigachad.ts",
+	"homepage": "https://github.com/NatoBoram/bug-report-func-style",
 	"bugs": {
-		"url": "https://github.com/NatoBoram/gigachad.ts/issues"
+		"url": "https://github.com/NatoBoram/bug-report-func-style/issues"
 	},
 	"license": "Unlicense",
 	"author": {
@@ -39,15 +34,11 @@
 	"bin": {
 		"gigachad": "dist/main.js"
 	},
-	"repository": "github:NatoBoram/gigachad.ts",
+	"repository": "github:NatoBoram/bug-report-func-style",
 	"scripts": {
 		"build": "tsc",
 		"clean": "rm -rf dist docs node_modules tsconfig.tsbuildinfo",
 		"dev": "tsx ./src/main.ts",
-		"docker": "pnpm run docker:build && pnpm run docker:run",
-		"docker:build": "docker build -t gigachad.ts .",
-		"docker:kill": "docker ps --format '{{.Image}} {{.ID}}' | grep gigachad.ts | awk '{print $2}' | xargs docker kill",
-		"docker:run": "docker run gigachad.ts",
 		"docs": "typedoc",
 		"format": "prettier --write .",
 		"lint": "eslint . && markdownlint-cli2 \"**/*.md\" && prettier --check .",
